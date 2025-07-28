@@ -1,0 +1,339 @@
+/* Global Styles */
+:root {
+    --primary-color: #ff5722;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+strong {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/backdrop_1.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/* Intro Section */
+.intro {
+    padding: 80px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+/* Mission Section */
+.mission {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+}
+
+.mission h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.mission p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Principles Section */
+.principles {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.principles h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+}
+
+.principle {
+    margin-bottom: 60px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.principle h3 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.principle h3 span {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.principle ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.principle li {
+    margin-bottom: 10px;
+}
+
+.motto {
+    font-style: italic;
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-top: 1px dashed var(--accent-color);
+    border-bottom: 1px dashed var(--accent-color);
+}
+
+/* Alternating principle colors */
+.principle:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.principle:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/backdrop_2.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+
+.testimonial {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: var(--primary-color);
+    opacity: 0.5;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    font-style: normal;
+}
+
+/* Conclusion Section */
+.conclusion {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+}
+
+.conclusion p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .lead {
+        font-size: 1.2rem;
+    }
+    
+    .principle h3 {
+        font-size: 1.5rem;
+    }
+    
+    .principle h3 span {
+        font-size: 1.8rem;
+    }
+    
+    blockquote {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 60px 0;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .principle {
+        padding: 20px;
+    }
+    
+    .testimonial {
+        padding: 20px;
+    }
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.principle, .testimonial {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.principle:nth-child(1) { animation-delay: 0.1s; }
+.principle:nth-child(2) { animation-delay: 0.2s; }
+.principle:nth-child(3) { animation-delay: 0.3s; }
+.principle:nth-child(4) { animation-delay: 0.4s; }
+.principle:nth-child(5) { animation-delay: 0.5s; }
+.principle:nth-child(6) { animation-delay: 0.6s; }
+
+.testimonial:nth-child(1) { animation-delay: 0.1s; }
+.testimonial:nth-child(2) { animation-delay: 0.2s; }
+.testimonial:nth-child(3) { animation-delay: 0.3s; }
+.testimonial:nth-child(4) { animation-delay: 0.4s; }
