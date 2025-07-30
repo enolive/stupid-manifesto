@@ -2,6 +2,10 @@
 
 Welcome to the future of software development, where shareholder value trumps everything! Who needs "best practices" when you can have **EXPLOSIVE PROFITS**?
 
+See the whole site at [GH Pages](https://enolive.github.io/stupid-manifesto/).
+
+**Note**: in case it isn't obvious, the whole thing is sarcasm. Don't do that in you projects!
+
 ## 🤑 Our Revolutionary Principles
 
 Embrace the **STUPID** methodology:
