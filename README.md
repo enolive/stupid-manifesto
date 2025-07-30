@@ -4,7 +4,7 @@ Welcome to the future of software development, where shareholder value trumps ev
 
 See the whole site at [GH Pages](https://enolive.github.io/stupid-manifesto/).
 
-**Note**: in case it isn't obvious, the whole thing is sarcasm. Don't do that in you projects!
+**Note**: in case it isn't obvious, the whole thing is sarcasm. Don't do that in your projects!
 
 ## 🤑 Our Revolutionary Principles
 
