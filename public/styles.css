@@ -359,3 +359,19 @@ footer {
         padding: 20px;
     }
 }
+
+.header-repo {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 2rem;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--primary-color);
+    }
+}

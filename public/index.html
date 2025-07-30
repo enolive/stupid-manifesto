@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The STUPID Manifesto: Maximizing Shareholder Value!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo_1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@400;700&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="assets/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/brands.min.css">
 </head>
 <body>
 <header>
@@ -18,6 +21,11 @@
             <h1>The STUPID Manifesto</h1>
             <h2>Maximizing Shareholder Value!</h2>
         </div>
+    </div>
+    <div class="header-repo">
+        <a href="https://www.github.com/enolive/stupid-manifesto" title="Contribute to our vision on GitHub" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
     </div>
 </header>
 
@@ -235,10 +243,17 @@
     <div class="container">
         <div class="footer-content">
             <img src="assets/logo_2.png" alt="STUPID Manifesto Logo" class="footer-logo">
-            <p>&copy; 2023 The STUPID Manifesto. All rights reserved. Maximize shareholder value today!</p>
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                The STUPID Manifesto. All rights reserved. Maximize shareholder value today!
+            </p>
         </div>
     </div>
 </footer>
 
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear().toString()
+</script>
 </body>
 </html>
