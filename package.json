@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "replace-base-href": "node scripts/replace-base-href.js"
+  }
+}
