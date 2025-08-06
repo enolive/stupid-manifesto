@@ -25,7 +25,9 @@ jobs:
           cache: 'npm'
 
       - name: Replace BASE_HREF
-        run: BASE_HREF=${{ steps.deployment.outputs.page_url }} npm run replace-base-href
+        env:
+          BASE_HREF: ${{ github.event.repository.name }}
+        run: npm run replace-base-href
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
